@@ -40,3 +40,5 @@ with col2:
         df.loc[len(df)] = ["Promedio", None, df["Altura"].mean()]
         
         st.dataframe(df, use_container_width = True, hide_index = True)
+    else:
+        str.error("Por favor, ingresa valores válidos para a, b y días.", icon = ":material/warning:")
